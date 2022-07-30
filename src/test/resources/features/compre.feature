@@ -9,6 +9,8 @@ Feature: Usuario se loguea a la aplicacion web
     And Se cierra la sesion
 
     Examples:
-      | username      | password     | tipo    | cantidad | nombre | apellido     | codigo |
-      | standard_user | secret_sauce | exitoso | 3        | Yordan | Castelblanco | 15976  |
-
+      | username                | password     | tipo      | cantidad | nombre | apellido     | codigo |
+      | standard_user           | secret_sauce | exitoso   | 3        | Yordan | Castelblanco | 15976  |
+      | locked_out_user         | secret_sauce | bloqueado | 0        |        |              |        |
+      | problem_user            | secret_sauce | problema  | 2        | Sandra | Zea          | 646    |
+      | performance_glitch_user | secret_sauce | glitch    | 2        | Flor   | Castillo     | 546    |
